@@ -14,21 +14,7 @@ class main {
     }
 }
 class html{
-    /*public  function generateRow($record,$count) {
-        $array = $record->returnArray();
-        $values = array_values($array);
-        #print_r($values);
-        $table1 = '<tr><th scope = "row">';
-        $table1 .= (string)$count;
-        $table1 .= '</th>';
-        foreach($values as $s) {
-            $table1 .= '<td>';
-            $table1 .= $s;
-            $table1 .= '</td>';
-        }
-        return $table1;
-    }*/
-    #$table1 ='';
+
     public static function generateTable($records) {
         $count = 1;
         $table1 = '';
@@ -63,56 +49,11 @@ class html{
                 $table1 .= '</td>';
             }
             $table1 .= '</tr>';
-            # print_r($values);
-            /*}else{
-                #$table1 .= $this-> generateRow($record, $count);
-                $array = $record->returnArray();
-                $values = array_values($array);
-                #print_r($values);
-                $table1 .= '<tr><th scope = "row">';
-                $table1 .= (string)$count;
-                $table1 .= '</th>';
-                foreach($values as $s){
-                    $table1 .= '<td>';
-                    $table1 .= $s;
-                    $table1 .= '</td>';
-                }
-                $table1 .= '</tr>';
-            }*/
+
             $count++;
         }
         $table1 .= '</tbody></table>';
-        /* $table = '';
-         $table .=  '<table class ="table">
-                     <thead>
-                     <tr>
-                       <th scope="col">#</th>
-                       <th scope="col">First</th>
-                       <th scope="col">Last</th>
-                       <th scope="col">Handle</th>
-                     </tr>
-                   </thead>
-                   <tbody>
-                     <tr>
-                       <th scope="row">1</th>
-                       <td>Mark</td>
-                       <td>Otto</td>
-                       <td>@mdo</td>
-                     </tr>
-                     <tr>
-                       <th scope="row">2</th>
-                       <td>Jacob</td>
-                       <td>Thornton</td>
-                       <td>@fat</td>
-                     </tr>
-                     <tr>
-                       <th scope="row">3</th>
-                       <td>Larry</td>
-                       <td>the Bird</td>
-                       <td>@twitter</td>
-                     </tr>
-                   </tbody>';
-         $table .= '</table>';*/
+
         return $table1;
     }
 }
