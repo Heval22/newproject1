@@ -1,6 +1,6 @@
 <?php
 /**
-
+Heval Butala - Project 1
  */
 main::start('example.csv');
 class main {
@@ -36,7 +36,7 @@ class html{
                     $table1 .= $s;
                     $table1 .= '</th>';
                 }
-                #print_r($fields);
+
                 $table1 .= '</tr></thead>';
                 $table1 .= '<tbody>';
             }
