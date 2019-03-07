@@ -29,7 +29,7 @@ class html{
             $fields = array_keys($array);
             $values = array_values($array);
             if ($count == 1) {
-                $table1 .= '<thead class="thead-dark"><tr>';
+                $table1 .= '<thead class="thead-light"><tr>';
                 $table1 .= '<th scope = "col"></th>';
                 foreach ($fields as $s) {
                     $table1 .= '<th scope = "col">';
